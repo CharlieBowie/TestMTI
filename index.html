@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Manejo del Estrés</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 1200px;
+        }
+        h1, h5 {
+            text-align: center;
+            color: #1E90FF; /* Azul cielo */
+        }
+        .intro {
+            background-color: #E0F7FA; /* Azul cielo claro */
+            padding: 15px;
+            border: 1px solid #B3E5FC;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        ul {
+            text-align: center; /* Centra el contenido del ul */
+            padding: 0; /* Elimina el padding por defecto */
+            list-style: none; /* Opcional: elimina los puntos de lista */
+        }
+        li {
+            display: inline-block; /* Hace que los <li> se comporten como elementos en línea */
+            margin: 5px 10px; /* Espaciado entre elementos */
+        }
+        .question {
+            margin: 20px auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación del Manejo del Estrés</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Evaluación del Manejo del Estrés</h1>
+        <div class="intro">
+            <p><strong>Paso 1:</strong> Antes de leer el material de este capítulo, responda a los siguientes enunciados escribiendo en la columna de la izquierda (evaluación previa) un número de la siguiente escala de evaluación. Las respuestas deben reflejar sus actitudes y comportamiento como son ahora, no como usted quisiera que fueran. Sea honesto. Este instrumento está diseñado para ayudarle a descubrir su nivel de competencia en el manejo del estrés, de manera que usted pueda adaptar su aprendizaje a sus necesidades específicas. Cuando haya completado el cuestionario, utilice la clave de resultados al final del capítulo para identificar las áreas de habilidades más importantes analizadas en este capítulo, que deberá dominar.</p>
+            <p><strong>Paso 2:</strong> Una vez que haya terminado la lectura de este capítulo, los ejercicios y, de manera ideal, la mayor cantidad posible de actividades de la sección Aplicación de habilidades al final de este capítulo, cubra su primer conjunto de respuestas y luego responda a los mismos reactivos nuevamente, esta vez en la columna de la derecha (evaluación posterior). Cuando termine de responder el cuestionario, utilice la clave de resultados al final del capítulo para medir su progreso. Si su resultado continúa bajo en áreas de habilidades específicas, utilice las guías de comportamiento que se presentan al final de la sección Aprendizaje de habilidades, para dirigir sus prácticas futuras.</p>
+        </div>
+        <p class="text-center">
+            Responde cada enunciado seleccionando un número del 1 al 6 de acuerdo a la escala proporcionada.
+        </p>
+
+        <h5>Escala de evaluación</h5>
+        <ul class="">
+            <li>1 - <strong>Totalmente en desacuerdo</strong></li>
+            <li>2 - <strong>En desacuerdo</strong></li>
+            <li>3 - <strong>Ligeramente en desacuerdo</strong></li>
+            <li>4 - <strong>Ligeramente de acuerdo</strong></li>
+            <li>5 - <strong>De acuerdo</strong></li>
+            <li>6 - <strong>Totalmente de acuerdo</strong></li>
+        </ul>
+        <hr> 
+        <!-- Etapa 1 -->
+        <section id="etapa1 text-center">
+            <h3>Etapa 1</h3>
+            <p>Responde las siguientes preguntas seleccionando un número del 1 al 6.</p>
+            <form id="formEtapa1">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label>1. Utilizo métodos eficaces de administración del tiempo.</label>
+                        <select class="form-select" name="q1">
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                
+                    <div class="col-md-6 mb-3">
+                        <label>2. Sigo un programa de ejercicio regular.</label>
+                        <select class="form-select" name="q2">
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 question">
+                        <label for="q3">3. Mantengo una relación abierta y de confianza.</label>
+                        <select class="form-select" name="q3" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 question">
+                        <label for="q4">4. Necesito y practico técnicas de relajación temporal.</label>
+                        <select class="form-select" name="q4" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 question">
+                        <label for="q5">5. A menudo reafirmo mis prioridades.</label>
+                        <select class="form-select" name="q5" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 question">
+                        <label for="q6">6. Mantengo un equilibrio en mi vida.</label>
+                        <select class="form-select" name="q6" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 question">
+                        <label for="q7">7. Tengo una relación cercana con alguien que funge como mi mentor o consejero.</label>
+                        <select class="form-select" name="q7" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 question">
+                        <label for="q8">8. Me valgo de otros de manera eficaz para cumplir con las tareas laborales.</label>
+                        <select class="form-select" name="q8" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 question">
+                        <label for="q9">9. Aliento a los demás a generar soluciones recomendadas, no sólo preguntas, cuando vienen
+                            a mí con problemas o conflictos.</label>
+                        <select class="form-select" name="q9" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 question">
+                        <label for="q10">10. Lucho por redefinir los problemas como oportunidades para mejorar.</label>
+                        <select class="form-select mt-4" name="q10" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>                    
+                <!-- Agrega más preguntas de Etapa 1 según sea necesario -->
+                <div class="row">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-success" onclick="calcularResultadoEtapa1()">Calcular Resultados</button>
+                    </div>
+                </div>
+            </form>
+            <div id="resultadoEtapa1" class="mt-3"></div>
+            <hr>
+        </section>
+
+        <!-- Etapa 2 -->
+        <section id="etapa2">
+            <h3>Etapa 2</h3>
+            <p>Responde las siguientes preguntas seleccionando un número del 0 al 4.</p>
+            <form id="formEtapa2">
+                <div class="mb-3 question">
+                    <label>1. Leo de manera selectiva, buscando en el material hasta que encuentro lo que es importante.</label>
+                    <select class="form-select" name="q1">
+                        <option value="">Selecciona...</option>
+                        <option value="0">0 - Nunca</option>
+                        <option value="1">1 - Rara vez</option>
+                        <option value="2">2 - A veces</option>
+                        <option value="3">3 - Con frecuencia</option>
+                        <option value="4">4 - Siempre</option>
+                    </select>
+                </div>
+                <div class="mb-3 question">
+                    <label>2. Elaboro una lista de tareas a completar cada día.</label>
+                    <select class="form-select" name="q2">
+                        <option value="">Selecciona...</option>
+                        <option value="0">0 - Nunca</option>
+                        <option value="1">1 - Rara vez</option>
+                        <option value="2">2 - A veces</option>
+                        <option value="3">3 - Con frecuencia</option>
+                        <option value="4">4 - Siempre</option>
+                    </select>
+                </div>
+                <!-- Agrega más preguntas de Etapa 2 según sea necesario -->
+
+                <button type="button" class="btn btn-primary" onclick="calcularResultadoEtapa2()">Calcular Resultados Etapa 2</button>
+            </form>
+            <div id="resultadoEtapa2" class="mt-3"></div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function calcularResultadoEtapa1() {
+            const form = document.forms['formEtapa1'];
+            let total = 0;
+            let respuestasCompletas = true;
+
+            for (let i = 1; i <= 2; i++) { // Ajusta el número de preguntas de Etapa 1
+                const valor = form[`q${i}`].value;
+                if (!valor) {
+                    respuestasCompletas = false;
+                    break;
+                }
+                total += parseInt(valor);
+            }
+
+            const resultDiv = document.getElementById('resultadoEtapa1');
+            if (!respuestasCompletas) {
+                resultDiv.innerHTML = '<div class="alert alert-danger">Por favor, responde todas las preguntas de la Etapa 1.</div>';
+            } else {
+                resultDiv.innerHTML = `<div class="alert alert-success">Puntuación total de la Etapa 1: <strong>${total}</strong></div>`;
+            }
+        }
+
+        function calcularResultadoEtapa2() {
+            const form = document.forms['formEtapa2'];
+            let total = 0;
+            let respuestasCompletas = true;
+
+            for (let i = 1; i <= 2; i++) { // Ajusta el número de preguntas de Etapa 2
+                const valor = form[`q${i}`].value;
+                if (!valor) {
+                    respuestasCompletas = false;
+                    break;
+                }
+                total += parseInt(valor);
+            }
+
+            const resultDiv = document.getElementById('resultadoEtapa2');
+            if (!respuestasCompletas) {
+                resultDiv.innerHTML = '<div class="alert alert-danger">Por favor, responde todas las preguntas de la Etapa 2.</div>';
+            } else {
+                resultDiv.innerHTML = `<div class="alert alert-success">Puntuación total de la Etapa 2: <strong>${total}</strong></div>`;
+            }
+        }
+    </script>
+</body>
+</html>
