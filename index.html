@@ -217,38 +217,47 @@
         </section>
 
         <!-- Etapa 2 -->
-        <section id="etapa2">
-            <h3>Etapa 2</h3>
-            <p>Responde las siguientes preguntas seleccionando un número del 0 al 4.</p>
-            <form id="formEtapa2">
-                <div class="mb-3 question">
-                    <label>1. Leo de manera selectiva, buscando en el material hasta que encuentro lo que es importante.</label>
-                    <select class="form-select" name="q1">
-                        <option value="">Selecciona...</option>
-                        <option value="0">0 - Nunca</option>
-                        <option value="1">1 - Rara vez</option>
-                        <option value="2">2 - A veces</option>
-                        <option value="3">3 - Con frecuencia</option>
-                        <option value="4">4 - Siempre</option>
-                    </select>
-                </div>
-                <div class="mb-3 question">
-                    <label>2. Elaboro una lista de tareas a completar cada día.</label>
-                    <select class="form-select" name="q2">
-                        <option value="">Selecciona...</option>
-                        <option value="0">0 - Nunca</option>
-                        <option value="1">1 - Rara vez</option>
-                        <option value="2">2 - A veces</option>
-                        <option value="3">3 - Con frecuencia</option>
-                        <option value="4">4 - Siempre</option>
-                    </select>
-                </div>
-                <!-- Agrega más preguntas de Etapa 2 según sea necesario -->
-
+   <!-- Etapa 2 -->
+<section id="etapa2">
+    <h3>Etapa 2</h3>
+    <p>Responde las siguientes preguntas seleccionando un número del 0 al 4.</p>
+    <form id="formEtapa2">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label>1. Leo de manera selectiva, buscando en el material hasta que encuentro lo que es importante.</label>
+                <select class="form-select" name="q1">
+                    <option value="">Selecciona...</option>
+                    <option value="0">0 - Nunca</option>
+                    <option value="1">1 - Rara vez</option>
+                    <option value="2">2 - A veces</option>
+                    <option value="3">3 - Con frecuencia</option>
+                    <option value="4">4 - Siempre</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>2. Elaboro una lista de tareas a completar cada día.</label>
+                <select class="form-select" name="q2">
+                    <option value="">Selecciona...</option>
+                    <option value="0">0 - Nunca</option>
+                    <option value="1">1 - Rara vez</option>
+                    <option value="2">2 - A veces</option>
+                    <option value="3">3 - Con frecuencia</option>
+                    <option value="4">4 - Siempre</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Agrega más preguntas de la Etapa 2 aquí si es necesario -->
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
                 <button type="button" class="btn btn-primary" onclick="calcularResultadoEtapa2()">Calcular Resultados Etapa 2</button>
-            </form>
-            <div id="resultadoEtapa2" class="mt-3"></div>
-        </section>
+            </div>
+        </div>
+    </form>
+    <div id="resultadoEtapa2" class="mt-3"></div>
+</section>
+
     </div>
 
     <!-- Bootstrap JS -->
